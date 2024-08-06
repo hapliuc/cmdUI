@@ -1,0 +1,33 @@
+NAME
+	cmdAnsi - cmdUI's ANSI color printer module
+SYNOPSIS
+	cmdAnsi [OPTION]
+	cmdAnsi [EFFECT] [TARGET] [COLOR]
+DESCRIPTION
+	Module that prints an ANSI escape sequence with selected option or color settings
+OPTIONS
+	-c	clear screen
+	-r	reset to default
+EFFECTS
+	n	normal text
+	b	bold text
+	d	dim text
+TARGETS
+	f	normal foreground
+	F	bright foreground
+	b	normal background
+	B	bright background
+COLORS
+	k	black
+	r	red
+	g	green
+	y	yellow
+	b	blue
+	m	magenta
+	c	cyan
+	w	white
+EXAMPLES
+	cmdAnsi -c
+		prints clear-screen ANSI escape sequence
+	cmdAnsi b f c
+		prints bold foreground cyan ANSI escape sequence

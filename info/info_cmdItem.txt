@@ -1,0 +1,15 @@
+NAME
+	cmdItem - cmdUI's string printer module
+SYNOPSIS
+	cmdItem [OPTION] [COLOR] [STRING]...
+DESCRIPTION
+	Module that prints a string with multiple colors
+OPTIONS
+	-n	no new line after string, great for prompts
+EXAMPLES
+	cmdItem "\033[0;31m" "This is" "\033[0;32m" "an example"
+		prints string with the first two words in red and last two in green
+	cmdItem -n "\033[1;37m" "This is an example:"
+		prints string in bold and without a new line
+	cmdItem "$(cmdAnsi b f c)" "This is an example with cmdAnsi"
+		prints string in bold cyan color using cmdAnsi module

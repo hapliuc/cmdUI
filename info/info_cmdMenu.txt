@@ -1,0 +1,10 @@
+NAME
+	cmdMenu - cmdUI's menu generator module
+SYNOPSIS
+	cmdMenu [PROMPT STRING] [LIST STYLE COLOR] [LIST STYLE] [ITEM STRING]...
+DESCRIPTION
+	Module that generates a menu with a list tyle and a prompt and stores input in thne $_optMenu variable
+	Depends on cmdAnsi and cmdItem modules
+EXAMPLES
+	cmdMenu "Select an item" "$(cmdAnsi b f w)" "[1] " "Item one" "$(cmdAnsi b f w)" "[2] " "Item two"
+		Generates a menu with two items

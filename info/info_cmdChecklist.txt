@@ -1,0 +1,16 @@
+NAME
+	cmdChecklist - cmdUI's checklist generator module
+SYNOPSIS
+	cmdChecklist [FILE] [UNCHECKED STYLE COLOR] [UNCHECKED STYLE] [CHECKED STYLE COLOR] [CHECKED STYLE]
+DESCRIPTION
+	Module that generates a checklist with a prompt and styles for checked and unchecked states
+	Stores checklist items in a file, and stores the input in the $_optChecklist variable
+	More commands can be added using the $_optChecklist variable
+	Depends on cmdAnsi and cmdItem modules
+COMMANDS
+	a	add item to checklist
+	d delete item from checklist
+	c check selected item
+EXAMPLES
+	cmdChecklist file.txt "$(cmdAnsi b f w)" " [ ] " "$(cmdAnsi b f g)" " [X] "
+		Creates a checklist saved in file.txt, with unchecked style in bold white and checked style in bold green
